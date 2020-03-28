@@ -20,6 +20,6 @@
     "build": "bob build"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^1.0.2"
+    "@bconnorwhite/bob": "^1.0.4"
   }
 }
