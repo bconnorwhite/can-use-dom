@@ -1,6 +1,6 @@
 {
   "name": "@bconnorwhite/can-use-dom",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Typed version of can-use-dom to check if you can use the DOM",
   "author": "Connor White",
   "license": "MIT",
