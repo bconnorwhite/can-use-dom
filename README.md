@@ -12,9 +12,8 @@ yarn add @bconnorwhite/can-use-dom
 
 ## API
 
-```ts
-canUseDOM: boolean
-```
 ```js
 import canUseDOM from "@bconnorwhite/can-use-dom";
+
+// canUseDOM: boolean
 ```
