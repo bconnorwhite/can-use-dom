@@ -11,9 +11,9 @@
     "is",
     "browser"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bconnorwhite/can-use-dom.git"
+  "files": [
+    "build"
+  ],
   },
   "main": "./build/index.js",
   "scripts": {
