@@ -2,8 +2,17 @@
   "name": "@bconnorwhite/can-use-dom",
   "version": "1.0.4",
   "description": "Typed version of can-use-dom to check if you can use the DOM",
-  "author": "Connor White",
   "license": "MIT",
+  "author": {
+    "name": "Connor White",
+    "email": "connor.bcw@gmail.com",
+    "url": "https://connorwhite.org"
+  },
+  "homepage": "https://connorwhite.org/github/can-use-dom",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bconnorwhite/can-use-dom.git"
+  },
   "keywords": [
     "can",
     "use",
@@ -14,13 +23,15 @@
   "files": [
     "build"
   ],
-  },
   "main": "./build/index.js",
   "scripts": {
     "build": "bob build",
-    "prepublishOnly": "yarn build"
+    "postversion": "git push",
+    "prepublishOnly": "yarn build",
+    "test": "jest"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^1.8.0"
+    "@bconnorwhite/bob": "^2.1.0",
+    "jest": "^26.4.2"
   }
 }
