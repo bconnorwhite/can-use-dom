@@ -1,13 +1,16 @@
 <div align="center">
   <h1>@bconnorwhite/can-use-dom</h1>
   <a href="https://npmjs.com/package/@bconnorwhite/can-use-dom">
-    <img alt="npm" src="https://img.shields.io/npm/v/@bconnorwhite/can-use-dom.svg">
+    <img alt="NPM" src="https://img.shields.io/npm/v/@bconnorwhite/can-use-dom.svg">
   </a>
   <a href="https://github.com/bconnorwhite/can-use-dom">
-    <img alt="typescript" src="https://img.shields.io/github/languages/top/bconnorwhite/can-use-dom.svg">
+    <img alt="TypeScript" src="https://img.shields.io/github/languages/top/bconnorwhite/can-use-dom.svg">
+  </a>
+  <a href='https://coveralls.io/github/bconnorwhite/can-use-dom?branch=master'>
+    <img alt="Coverage Status" src="https://img.shields.io/coveralls/github/bconnorwhite/can-use-dom.svg?branch=master">
   </a>
   <a href="https://github.com/bconnorwhite/can-use-dom">
-    <img alt="GitHub stars" src="https://img.shields.io/github/stars/bconnorwhite/can-use-dom?label=Stars%20Appreciated%21&style=social">
+    <img alt="GitHub Stars" src="https://img.shields.io/github/stars/bconnorwhite/can-use-dom?label=Stars%20Appreciated%21&style=social">
   </a>
   <a href="https://twitter.com/bconnorwhite">
     <img alt="Twitter Follow" src="https://img.shields.io/twitter/follow/bconnorwhite.svg?label=%40bconnorwhite&style=social">
@@ -20,15 +23,13 @@
 
 ## Installation
 
-```bash
+```sh
 yarn add @bconnorwhite/can-use-dom
 ```
 
-```bash
+```sh
 npm install @bconnorwhite/can-use-dom
 ```
-
-<br />
 
 ## API
 
@@ -45,6 +46,7 @@ import canUseDOM from "@bconnorwhite/can-use-dom";
 - [@bconnorwhite/bob](https://www.npmjs.com/package/@bconnorwhite/bob): Bob is a toolkit for TypeScript projects
 - [jest](https://www.npmjs.com/package/jest): Delightful JavaScript Testing.
 
+<br />
 
 <h2>License <img align="right" alt="license" src="https://img.shields.io/npm/l/@bconnorwhite/can-use-dom.svg"></h2>
 
