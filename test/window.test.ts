@@ -1,7 +1,6 @@
 import { test, expect } from "@jest/globals";
+import canUseDOM from "../source";
 
-const canUseDOM = require('../build')['default'];
-
-test('window exists', () => {
+test("window exists", () => {
   expect(canUseDOM).toBe(true);
 });
