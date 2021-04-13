@@ -44,7 +44,6 @@ import canUseDOM from "@bconnorwhite/can-use-dom";
 <h2>Dev Dependencies<img align="right" alt="David" src="https://img.shields.io/david/dev/bconnorwhite/can-use-dom.svg"></h2>
 
 - [@bconnorwhite/bob](https://www.npmjs.com/package/@bconnorwhite/bob): Bob is a toolkit for TypeScript projects
-- [jest](https://www.npmjs.com/package/jest): Delightful JavaScript Testing.
 
 <br />
 
