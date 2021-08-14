@@ -1,3 +1,7 @@
+## [1.0.8](https://github.com/bconnorwhite/can-use-dom/compare/v1.0.7...v1.0.8) (2021-08-14)
+
+
+
 ## [1.0.7](https://github.com/bconnorwhite/can-use-dom/compare/v1.0.6...v1.0.7) (2021-04-13)
 
 
