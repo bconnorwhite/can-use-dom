@@ -2,13 +2,11 @@
   "name": "@bconnorwhite/can-use-dom",
   "version": "1.0.8",
   "description": "Typed version of can-use-dom to check if you can use the DOM",
+  "main": ".auto/build/index.js",
+  "author": "Connor White",
   "license": "MIT",
-  "author": {
-    "name": "Connor White",
-    "email": "connor.bcw@gmail.com",
-    "url": "https://connorwhite.org"
-  },
-  "homepage": "https://connorwhite.org/github/can-use-dom",
+  "private": false,
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bconnorwhite/can-use-dom.git"
@@ -20,29 +18,32 @@
     "is",
     "browser"
   ],
+  "exports": "./.auto/build/index.js",
+  "types": ".auto/build/index.d.js",
   "files": [
-    "build"
+    ".auto/build/**/!(tsconfig.tsbuildinfo)"
   ],
-  "main": "./build/index.js",
+  "engines": {
+    "node": "^14.13.1 || >=16.0.0"
+  },
   "scripts": {
-    "build": "bob build",
-    "commit": "bob commit",
-    "lint": "bob lint",
-    "release": "bob publish",
-    "test": "bob test"
+    "build": "auto build",
+    "dev": "auto dev",
+    "lint": "auto lint",
+    "prepack": "yarn build",
+    "test": "auto test",
+    "typecheck": "auto typecheck"
   },
   "devDependencies": {
-    "@bconnorwhite/bob": "^2.9.5"
+    "autorepo": "^0.1.2"
   },
   "eslintConfig": {
-    "extends": "eslint-config-bob"
+    "extends": "@autosoft/eslint-config"
   },
-  "husky": {
-    "hooks": {
-      "commit-msg": "bob lint commit"
-    }
+  "jest": {
+    "preset": "@autosoft/jest-preset"
   },
   "npmpackagejsonlint": {
-    "extends": "npm-package-json-lint-config-bob"
+    "extends": "npm-package-json-lint-config-auto"
   }
 }
