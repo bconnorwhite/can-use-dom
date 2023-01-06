@@ -5,10 +5,6 @@
     "outDir": ".auto/build",
     "rootDirs": [
       "source"
-    ],
-    "typeRoots": [
-      "node_modules/@types",
-      "types"
     ]
   },
   "files": [
