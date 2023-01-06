@@ -1,6 +1,6 @@
-import { test, expect } from "@jest/globals";
+import { test, expect, beforeEach, afterEach, jest } from "@jest/globals";
 
-let windowSpy: jest.SpyInstance<(Window & typeof globalThis) | undefined, []>;
+let windowSpy: ReturnType<typeof jest.spyOn>;
 
 beforeEach(() => {
   windowSpy = jest.spyOn(global, "window", "get");
@@ -10,9 +10,8 @@ afterEach(() => {
   windowSpy.mockRestore();
 });
 
-test("undefined window", () => {
+test("undefined window", async () => {
   windowSpy.mockImplementation(() => undefined);
-  // eslint-disable-next-line @typescript-eslint/no-var-requires, global-require
-  const canUseDOM = require("../source").default;
+  const canUseDOM = (await import("../source/index.js")).default;
   expect(canUseDOM).toBe(false);
 });
