@@ -1,6 +1,18 @@
-import { test, expect } from "@jest/globals";
-import canUseDOM from "../source/index.js";
+import { afterAll, beforeAll, expect, test } from "@jest/globals";
 
-test("window exists", () => {
+beforeAll(() => {
+  global.window = {
+    document: {
+      createElement: () => {}
+    }
+  } as any;
+});
+
+afterAll(() => {
+  delete (global as any).window;
+});
+
+test("window", async () => {
+  const canUseDOM = (await import("../source/index.js")).default;
   expect(canUseDOM).toBe(true);
 });
