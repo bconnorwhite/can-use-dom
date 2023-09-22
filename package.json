@@ -35,7 +35,7 @@
     "typecheck": "auto typecheck"
   },
   "devDependencies": {
-    "autorepo": "^0.1.6"
+    "autorepo": "^0.1.11"
   },
   "eslintConfig": {
     "extends": "@autosoft/eslint-config"
